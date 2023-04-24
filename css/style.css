@@ -4,6 +4,11 @@
 }
 
 .nav li {
+    display: flex;
     font-family: Outfit;
-    list-style-type: disc;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    align-items: right;
+}
 }
