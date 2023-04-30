@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+<!-- A doctype is a required prepatory statement. It tells the browswer to proceed as per html5 specifications. 
+reference link =https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics -->
+<html>
+    <head> 
+        <!--Meta:  meta elements are an important tool for web developers to help optimize the visibility and 
+        usability of their HTML documents.-->
+
+        <!--
+    >> Here the meta data view port has two attributes. 
+    >> The width=device-width value sets the width of the viewport to the width of the device on which the page is 
+    being viewed. 
+    >> Using the viewport metadata in this way is an essential technique in responsive web design, as it allows web 
+       designers to create pages that adjust to different screen sizes and display correctly on various devices.
+    --><!--Meta:  meta elements are an important tool for web developers to help optimize the visibility and 
+        usability of their HTML documents.-->
+
+        <meta name = "author" content = "Ness">
+        <meta name = "description" content = "HTML document">
+        <meta name = "keywords" content = "html/css/javascript">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Equipments</title>
+
+        <!-- Internal CSS: Linking external css element with html element.-->
+        <link rel = "stylesheet" type="text/css" href ="/css/product.css"> 
+    <!--Here the css file is in seperate folder so we gotta give the folder path too-->
+        <!-- Linking external javascript element with html element.-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+      Internal CSS: Internal CSS (Cascading Style Sheets) are defined within the HTML document's head section using
+      the <style> tag. 
+      In other words, it's a way to include CSS rules directly in the HTML file rather than using an external CSS file.
+      The advantage of Internal CSS over External CSS is that he CSS code is contained within the HTML document, making 
+      it easier to manage and distribute the file.
+-->
+        <script src="../javascript/product.js"></script>
+       </head>
+
+      <!--<style
+
+
+
+           
+/* >>It is important to note that while in HTML elements the comments begin with <!-- and ends with . However while in CSS
+elements the comment states with /* and ends with */
+/*
+ul.topnav { 
+  list-style-type: none; 
+  /*List style type gives format for bulletin. The nav bar is created using tables and unordered lists, and we dont want bulletins before
+  our text on navigation bar 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #020000;
+}
+
+ul.topnav li {float: left;}
+/*Padding (x,y) increases the size of the navigation box as per our requirement
+ul.topnav li a {
+  display:block ;
+  color: white;
+  text-align: center;
+  padding: 10px 100px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover 
+{background-color: #f6f5f3;
+color: black;
+font-family: 'Courier New', Courier, monospace;
+font-size: 20pt;}
+
+ul.topnav li a.active {background-color: #90c3f5;}
+
+ul.topnav li.right {float: left;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+            
+        </style>
+
+</head>
+
+
+<body>
+
+    <div>
+        <ul class="topnav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#Research">Research</a></li>
+            <li><a class="active" href="#Product">Product</a></li>
+            <li class="right"><a href="#about">Blog</a></li>
+          </ul>
+    </div>
+    */
+-->
+<body>
+    <section class = "container">
+        <div class = "content">
+            <h1> Scroll to begin</h1>
+            <p>Start it like this</p>
+        </div>
+    </section>
+
+    <section class = "container">
+        <div class = "content">
+            <h1> Step 1</h1>
+            <p>Start it like this</p>
+        </div>
+    </section>
+
+    <section class = "container">
+        <div class = "content">
+            <h1> Step 2</h1>
+            <p>Start it like this</p>
+        </div>
+    </section>
+
+    <section class = "container">
+        <div class = "content">
+            <h1> Step 3</h1>
+            <p>Start it like this</p>
+        </div>
+    </section>
+
+    <section class = "container">
+        <div class = "content">
+            <h1> Step 4</h1>
+            <p>Start it like thi</p>
+        </div>
+    </section> 
+    
+ 
+
+        
+        <div 
+        id = "set-height"></div>
+
+        <video id="v0" tabindex="0", autobuffer preload>
+            <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="../images/Drones/vid.mp4"></source>
+        </video>
+        
+        <script src="../javascript/product.js"></script>
+        <script>
+    
+            enterView({
+                selector: 'section',
+                enter: function(el) {
+                    el.classList.add('entered'); 
+                }
+            })
+        
+            var frameNumber = 0, // start video at frame 0
+            // lower numbers = faster playback
+            playbackConst = 500, 
+            // get page height from video duration
+            setHeight = document.getElementById("set-height"), 
+            // select video element         
+            vid = document.getElementById('v0'); 
+            // var vid = $('#v0')[0]; // jquery option
+    
+        // dynamically set the page height according to video length
+        vid.addEventListener('loadedmetadata', function() {
+        setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+        });
+    
+    
+        // Use requestAnimationFrame for smooth playback
+        function scrollPlay(){  
+        var frameNumber  = window.pageYOffset/playbackConst;
+        vid.currentTime  = frameNumber;
+        window.requestAnimationFrame(scrollPlay);
+        }
+    
+        window.requestAnimationFrame(scrollPlay);
+        
+        </script>
+</body>
+    </html>
+
+    </section>
+

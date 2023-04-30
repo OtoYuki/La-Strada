@@ -1,0 +1,53 @@
+.winz
+{
+    margin: 5%;
+}
+
+#more {display: none;}
+
+.descriptionfonts
+{
+font-size: 12pt;
+
+}
+.para
+{
+word-spacing: 8px;
+line-height: 1.5;
+
+
+}
+
+
+.row {
+    content: ""; /*The content property is set to an empty string, which is used to clear any previous 
+    floats in the layout*/
+    display: table;
+    /*The display property is set to "table", which allows the columns to behave like table cells.*/
+    clear: both;
+    /*The clear property is set to "both", which means that the row will clear any floats on both the left
+    and right sides.*/
+
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 100px;
+    height: 100%;
+
+
+    
+  }
+  
+  .image
+  {
+    margin: 10px;
+  }
+
+
+   
+  .division-class {
+    clear: both;
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Style for the images */
+      .image-container {
+        display: flex;
+      }
+      
+      .image-container img {
+        /* the container element is set to position: relative to establish a positioning context for the image 
+        element. The overflow: hidden property is used to hide any part of the image that may extend beyond the 
+        container.
+        */
+        position: relative;
+        overflow:hidden ;
+        width: 400px;
+        height: 400px;
+        margin: 30px;
+        border: 1px solid #ccc;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      /* Style for the first image hover effect */
+      .image-container img:first-child:hover {
+
+        animation:cubic-bezier(0.55, 0.055, 0.675, 0.19) ;
+        transform: scale(2);
+      }
+
+      /* Style for the second image hover effect */
+      .image-container img:nth-child(2):hover {
+        filter: grayscale(100%);
+      }
+
+      /* Style for the third image hover effect */
+      .image-container img:last-child:hover {
+        opacity: 0.5;
+      }
+
+      .box
+      {
+        margin-top: 100px;
+      }
+
+      body
+      {
+        background-color:azure ;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- We can use multiple CSS classes (i.e., image-container and box) by quoting one more multiple classes inside the double quotation-->
+    <div class = "image-container box">
+    <img src="/images/Equipment/bag6.jpg" alt="Image 1">
+    <img src="/images/Equipment/bag7.jpg" alt="Image 2">
+    <img src="/images/Equipment/bag5.jpg" alt="Image 3">
+</div>
+<section>
+    
+</section>
+  </body>
+</html>
