@@ -77,11 +77,11 @@ nav ul li a:hover {
 main {
     margin-bottom: 0;
     display: flex;
-    margin: 300px 300px 50px 300px;
+    margin: 200px 200px 30px 200px;
     height: 100vh;
-    max-height: 800px;
+    max-height: 700px;
 
-    padding-bottom: 100px;
+    padding-bottom: 0;
     border-bottom: 2px solid #8A6DFF;
     border-image: linear-gradient(to right, #8A6DFF, #FF8A8A) 1;
 }
@@ -90,7 +90,7 @@ main {
     position: relative;
 
     width: 50%;
-    left: 10%;
+    left: 0;
     justify-content: space-evenly;
 }
 
@@ -124,6 +124,22 @@ main {
     top: -400px;
     left: -200px;
     transform: matrix(-0.88, 0.48, 0.48, 0.88, 0, 0);
+    animation: float ease-in-out 5s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: matrix(-0.88, 0.48, 0.48, 0.88, 0, 0) translateY(-40px);
+    }
+
+    50% {
+        transform: matrix(-0.88, 0.48, 0.48, 0.88, 0, 0) translateY(10px);
+    }
+
+    100% {
+        transform: matrix(-0.88, 0.48, 0.48, 0.88, 0, 0) translateY(-40px);
+    }
+
 }
 
 .left-col h2 {
@@ -136,27 +152,30 @@ main {
 
 }
 
-h4 {
-    font-family: "Bebas Neue";
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 24px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 6.56px;
-}
+
 
 /* Ellipse 1 */
 .ellipse1 {
     position: absolute;
-    width: 500px;
-    height: 500px;
-    top: -55%;
-    left: 35%;
+    width: 600px;
+    height: 600px;
+    top: -50%;
+    left: 50%;
 
     background: #5F5389;
-    filter: blur(70px);
+    filter: blur(360px);
     z-index: -1;
+}
+
+.ellipse2 {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: #f1aa67;
+    filter: blur(147px);
+    left: 1700px;
+    top: 200px;
+    z-index: -100;
 }
 
 .left-top-right-bottom {
@@ -165,33 +184,16 @@ h4 {
     top: -110px;
 }
 
-h3 {
-    font-family: 'ASTRO';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 119px;
-}
+
 
 .left-col-bottom {
     position: relative;
     margin: 0;
     padding: 0;
     top: -335px;
-    z-index: 200;
 }
 
-h1 {
-    font-family: 'Havana';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 180px;
-    line-height: 170px;
-    background: linear-gradient(180deg, #8A6DFF 22.58%, #CE8D4F 67.73%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
+
 
 .cta-btn {
     width: auto;
@@ -199,7 +201,7 @@ h1 {
     display: flex;
     position: relative;
     justify-content: center;
-    left: -10%;
+    left: -6%;
     top: -110px;
 }
 
@@ -231,7 +233,7 @@ h1 {
 
 /* Categories */
 .section-p1 {
-    padding: 40px 80px;
+    padding: 30px 80px;
 }
 
 #feature {
@@ -247,9 +249,9 @@ h1 {
     aspect-ratio: 1/1;
     text-align: center;
     padding: 2px 2px;
-    border: 2px solid;
+    border: 5px solid;
     border-image: linear-gradient(to right, #8A6DFF, #FF8A8A) 1;
-    border-radius: 100px;
+    border-radius: 10px;
     margin: 15px 0;
     transition: 1s;
 }
@@ -273,10 +275,9 @@ h1 {
     display: inline-flexbox;
     padding: 10px;
     margin: 0;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 10;
     line-height: 1;
-    border-radius: 4px;
     color: rgb(223, 242, 243);
     background-color: #8A6DFF;
     pointer-events: cursor;
@@ -294,4 +295,166 @@ h1 {
     background-color: #EEA35E;
     color: black;
     transition: 1s;
+}
+
+.categories {
+    border-width: 900px;
+    border-bottom: 2px solid #8A6DFF;
+    border-image: linear-gradient(to right, #8A6DFF, #FF8A8A) 1;
+    margin-bottom: 30px;
+}
+
+
+.members {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10%;
+    margin-bottom: 40px;
+    padding: 30px 30px;
+    background: linear-gradient(90deg, #8A6DFF 22.58%, #CE8D4F 67.73%);
+    background-size: 200% 200%;
+    animation: color 6s ease-in-out infinite;
+    border-radius: 200px;
+    align-items: center;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.aboutus {
+    border-width: 900px;
+    border-bottom: 2px solid #8A6DFF;
+    border-image: linear-gradient(to right, #8A6DFF, #FF8A8A) 1;
+    margin-bottom: 30px;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.members a {
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+}
+
+.members a:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.members h8,
+h9,
+h10 {
+    color: black;
+    position: relative;
+    font-family: "Havana";
+    font-style: normal;
+}
+
+.members h8 {
+    font-weight: 300;
+    font-size: 70px;
+    margin: 0;
+
+}
+
+.members h9 {
+    font-weight: 300;
+    font-size: 80px;
+    margin: 0;
+
+}
+
+.members h10 {
+    font-weight: 300;
+    font-size: 100px;
+    margin: 0;
+
+}
+
+.members h6 {
+    display: block;
+    position: relative;
+    font-family: "Cinzel";
+    font-weight: 600;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+.members {
+    margin-top: 50px;
+    transition: 1s;
+}
+
+.members:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 20%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.footer-a {
+    margin: 2px;
+}
+
+.footer-a img {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.footer-icons:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-text p {
+    position: relative;
+    font-family: "Bebas Neue";
+    margin-bottom: 5px;
+    margin-top: 0;
+    justify-content: center;
+    font-size: 22px;
 }
