@@ -408,6 +408,54 @@ h10 {
 }
 
 
+
+
+
+/* Blog Portion */
+.blog {
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #8A6DFF;
+    border-image: linear-gradient(to right, #8A6DFF, #FF8A8A) 1;
+}
+
+.blog p {
+    margin: 0px 200px 30px 200px;
+    font-size: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.button a {
+    background: transparent;
+    font-family: "Cinzel";
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 26px;
+    border: 1.5px solid white;
+    border-radius: 100px;
+    padding: 10px 20px;
+    transition: 1s;
+}
+
+.button a:hover {
+    color: black;
+    background: linear-gradient(180deg, #8A6DFF 22.58%, #CE8D4F 67.73%);
+    border: none;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 /* Footer */
 footer {
     margin-top: 30px;
