@@ -1,5 +1,5 @@
 // Select all elements with the class 'add-cart'
-let carts = document.querySelectorAll('.add-cart');//
+let carts6 = document.querySelectorAll('.add-cart');//
 
 // Define an array of product objects
 let products = [
@@ -34,8 +34,8 @@ let products = [
 ]
 
 // Attach click event listeners to the 'add-cart' elements
-for (let i = 0; i < carts.length; i++) {
-    carts[i].addEventListener('click', () => {
+for (let i = 0; i < carts6.length; i++) {
+    carts6[i].addEventListener('click', () => {
         cartNumbers(products[i]);
         totalCost(products[i]);
     })
@@ -47,7 +47,7 @@ function onLoadCartNumbers() {
 
     let productNumbers = localStorage.getItem('cartNumbers');
     if (productNumbers) {
-        document.querySelector('.carts span').textContent = productNumbers;
+        document.querySelector('.carts .cart5 span').textContent = productNumbers;
     }
 }
 
@@ -59,10 +59,10 @@ function cartNumbers(product) {
 
     if (productNumbers) {
         localStorage.setItem('cartNumbers', productNumbers + 1);
-        document.querySelector('.carts span').textContent = productNumbers + 1;
+        document.querySelector('.carts .cart5 span').textContent = productNumbers + 1;
     } else {
         localStorage.setItem('cartNumbers', 1);
-        document.querySelector('.carts span').textContent = 1;
+        document.querySelector('.carts .cart5 span').textContent = 1;
     }
     setItems(product);
 
@@ -128,16 +128,15 @@ function displayCart() {
                 `
   <div class="product-title1">
  
-  <img src="../images/${item.tag}.jpg">
-  <span>${item.name}</span>
-  </div>
-  <div class="quantity1"><span> ${item.inCart} </span> </div>
+  <img src="../images/${item.tag}.jcarts .cart5 span>${item.carts.cart5 span >
+  </div >
+                <div class="quantcarts .cart5 span> ${item.inCcarts .cart5 span> </div>
  <div class="price1">${item.price}</div>
 
 
 
-<div class="total1" > ${item.inCart * item.price} </div>
-  `
+                < div class="total1" > ${ item.inCart * item.price } </ >
+                    `
         });
 
 

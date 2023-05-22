@@ -110,6 +110,12 @@ p.member-contact {
     font-size: 18px;
 }
 
+
+button a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 button {
     background: transparent;
     font-family: monospace;

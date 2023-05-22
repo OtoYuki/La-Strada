@@ -21,6 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     max-height: 100px;
+    margin-right: 80px;
 }
 
 header img {
@@ -29,6 +30,30 @@ header img {
     left: -80px;
     width: 400px;
     aspect-ratio: 1/1;
+}
+
+.carts img {
+    position: absolute;
+    width: 50px;
+    aspect-ratio: 1/1;
+    left: 93%;
+    top: 25px;
+}
+
+.cart {
+    position: absolute;
+    font-family: monospace;
+    font-size: 25px;
+    left: 92.5%;
+    top: 35px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.cart:hover {
+
+    color: #8A6DFF;
+    transition: 1s;
 }
 
 nav {
@@ -57,6 +82,8 @@ nav ul li a {
     font-weight: 600;
     transition: .5s;
 }
+
+
 
 nav ul li a.active {
     color: #EEA35E;

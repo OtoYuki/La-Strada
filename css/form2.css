@@ -4,26 +4,45 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
-  background-color: #a68642;
+  background: rgba(0, 0, 0, 0.7) url("/images/creativeupstarrybg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  overflow-x: hidden;
 }
+
 .container {
   width: 550px;
-  background-color: #f8f8f8;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 80px 48px;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  border-radius: 9 px;
-  box-shadow: 0  rgba(71, 50, 4, 0.3);
+  border-radius: 200 px;
+  box-shadow: 0 rgba(71, 50, 4, 0.3);
 }
 
-.para
-{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: rgb(109, 109, 109)
-  font;
+h3 {
+  font-family: 'havana', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  background: linear-gradient(180deg, #8A6DFF 22.58%, #CE8D4F 67.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.para {
+  font-family: monospace;
+  font-size: 20px;
+  color: rgb(109, 109, 109);
 }
 
 
@@ -33,6 +52,7 @@ input,
   outline: none;
   display: block;
 }
+
 input {
   width: 100%;
   background-color: transparent;
@@ -51,6 +71,7 @@ input {
   margin-top: 32px;
   border-radius: 4.8 px;
 }
+
 #message-ref {
   font-size: 14px;
   margin-top: 24px;

@@ -3,6 +3,30 @@
     margin: 0;
 }
 
+a {
+    background: transparent;
+    font-family: "Cinzel";
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 26px;
+    border: 1.5px solid white;
+    border-radius: 100px;
+    padding: 10px 20px;
+    transition: 1s;
+}
+
+a:hover {
+    color: black;
+    background: linear-gradient(180deg, #8A6DFF 22.58%, #CE8D4F 67.73%);
+    border: none;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 .categories {
     margin: 70px 0;
 
@@ -66,7 +90,8 @@
 }
 
 h4 {
-    color: #555;
+    font-family: "Bebas Neue";
+    color: aliceblue;
     font-weight: normal;
 }
 
